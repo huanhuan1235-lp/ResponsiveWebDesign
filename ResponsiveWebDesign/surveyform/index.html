@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+	<style>
+body {
+	background-color:rgb(161, 211, 253);
+}
+form {
+	background-color:rgb(96, 90, 253);
+}
+	</style>
+</head>
+<body>
+	<h1 id="title">freeCodeCamp Survey Form</h1>
+	<p id="description">Thank you for taking the time to help us improve the platform</p>
+	<form id="survey-form" action="">
+		Name<br>
+		<label id="name-label" for="name"><input type="text" id ="name" placeholder="Enter your name" required></label><br>
+<br>
+		Email<br>
+		<label id="email-label" for="email"><input type="email" id ="email" placeholder="Enter your Email" required></label><br>
+<br>
+		Age<br>
+		<label="number-label" for="number"><input type="number" id ="name" placeholder="Age" min="1" max="100"></label><br>
+<br>
+		Which option best describes your current role?<br>
+		<select id="dropdown" name="current_role" placeholder="Select current role">
+			<option value="Student">Student</option>
+			<option value="Full_Time_Job">Full Time Job</option>
+			<option value="Full_Time_Learner">Full Time Learner</option>
+			<option value="Prefer_not_to_say">Prefer not to say</option>
+			<option value="Other">Other</option>
+		</select>
+		<br>
+		Would you recomment freeCodeCamp to a friend?<br>
+		<input type="radio" name="recommend" value="Definitely">Definitely<br>
+		<input type="radio" name="recommend" value="Maybe">Maybe<br>
+		<input type="radio" name="recommend" value="Not sure">Not sure<br>
+		<br>
+		What is your favorite feature of freeCodeCamp?<br>
+		<select id="feature" name="favorite_feature" placeholder="Select an option">
+			<option value="Challenges">Challenges</option>
+			<option value="Projects">Projects</option>
+			<option value="Community">Community</option>
+			<option value="Open_Source">Open Source</option>
+		</select><br>
+		What would you like to see improved?<br>
+		<input type="checkbox" name="improvement" value="Front-end_Projects">Front-end Projects<br>
+		<input type="checkbox" name="improvement" value="Back-end_Projects">Back-end_Projects<br>
+		<input type="checkbox" name="improvement" value="Data_Visualization">Data Visualization<br>
+		<input type="checkbox" name="improvement" value="Challenges">Challenges<br>
+		<br>
+		Any comments or suggestion?<br>
+		<textarea id="comment" name="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+		<button type="button">Submit</button>
+	</form>
+</body>
+</html>
