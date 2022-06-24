@@ -5,11 +5,10 @@
 	<title>Survey Form</title>
 	<style>
 body {
-	background-color:#0000FF;
-	color:white;
+	color:black;
 }
 form {
-	background-color:#00008B;
+	background-color:skyblue;
 }
 	</style>
 </head>
@@ -17,9 +16,12 @@ form {
 	<h1 id="title">freeCodeCamp Survey Form</h1>
 	<p id="description">Thank you for taking the time to help us improve the platform</p>
 	<form id="survey-form" action="">
-		Name<br>
-		<label id="name-label" for="name"><input type="text" id ="name" placeholder="Enter your name" required></label><br>
-<br>
+		<div>
+		<label id="name-label" for="name">Name</label>
+			<input type="text" name="name" id ="name" placeholder="Enter your name" required>
+		</div>
+		
+
 		Email<br>
 		<label id="email-label" for="email"><input type="email" id ="email" placeholder="Enter your Email" required></label><br>
 <br>
