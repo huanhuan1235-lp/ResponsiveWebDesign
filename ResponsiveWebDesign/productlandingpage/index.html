@@ -12,7 +12,7 @@ ul {
 	margin-right: auto;
 }
 img {
-	width: 50%;
+	width: 40%;
 	height: auto;
 }
 li {
@@ -20,25 +20,25 @@ li {
 	border: 1px solid black;
 	padding: 10px;
 }
-@media only screen and (min-width: 600px){
-	img {
-		display: inline;
-	}
-	li {
-		display: inline;
+.header-container {
+	display: flex;
+}
+@media only screen and (max-width: 600px){
+	.header-container {
+		flex-direction: row;
 	}
 }
 	</style>
 </head>
 <body>
-	<div id="header">
+	<div id="header" class="header-container">
 		<img src="title_image.PNG" alt="Original Trombones" id="header-img">
 		<nav id="nav-bar">
 			<ul>
 				<li class="nav-link"><a href="#features">Features</a></li>
 				<li class="nav-link"><a href="#how_it_works">How it Works</a></li>
 				<li class="nav-link"><a href="#pricing">Pricing</a></li>
-			
+			</ul>	
 		</nav>
 	</div>
 	<div>
