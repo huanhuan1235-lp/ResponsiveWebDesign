@@ -23,18 +23,25 @@ li {
 .header-container {
 	display: flex;
 }
+#media-test {
+	color: red;
+}
 @media only screen and (max-width: 600px){
 	.header-container {
-		flex-direction: row;
+		flex-direction: column;
+	}
+	#media-test {
+		color: blue;
 	}
 }
 	</style>
 </head>
 <body>
+	<h6 id="media-test">blue if width < 600(column), red if width>600(row)</h6>
 	<div id="header" class="header-container">
 		<img src="title_image.PNG" alt="Original Trombones" id="header-img">
 		<nav id="nav-bar">
-			<ul>
+			<ul class="header-container">
 				<li class="nav-link"><a href="#features">Features</a></li>
 				<li class="nav-link"><a href="#how_it_works">How it Works</a></li>
 				<li class="nav-link"><a href="#pricing">Pricing</a></li>
