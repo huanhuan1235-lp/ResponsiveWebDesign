@@ -32,6 +32,9 @@ li {
 	position: fixed;
 	width: 100%;
 }
+.nav-container {
+	display: flex;
+}
 #start_submit {
 	background-color: rgb(230, 201,0);
 }
@@ -42,8 +45,8 @@ li {
 	.header-container {
 		flex-direction: column;
 	}
-	#media-test {
-		color: blue;
+	.nav-container {
+		flex-direction: column;
 	}
 }
 #title_email {
@@ -84,7 +87,7 @@ td {
 	<div id="header" class="header-container">
 		<img src="title_image.PNG" alt="Original Trombones" id="header-img">
 		<nav id="nav-bar">
-			<ul class="header-container">
+			<ul class="nav-container">
 				<li class="nav-link"><a href="#features">Features</a></li>
 				<li class="nav-link"><a href="#how_it_works">How it Works</a></li>
 				<li class="nav-link"><a href="#pricing">Pricing</a></li>
