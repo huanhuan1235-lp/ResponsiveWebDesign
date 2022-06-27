@@ -3,8 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Alatsi' rel="stylesheet">
 	<title>product-landing-page</title>
 	<style>
+body {
+	max-width: max-content;
+	margin: auto;
+	font-family: 'Alatsi';
+}
 ul {
 	width: 50%;
 	list-style: none;
@@ -12,8 +18,8 @@ ul {
 	margin-right: auto;
 }
 img {
-	width: 40%;
-	height: auto;
+	max-width: 40%;
+	max-height: 40%;
 }
 li {
 	width: 200px;
@@ -23,8 +29,11 @@ li {
 .header-container {
 	display: flex;
 }
-#media-test {
-	color: red;
+#start_submit {
+	background-color: rgb(230, 201,0);
+}
+#start_submit:hover {
+	background-color: rgb(220, 163, 0);
 }
 @media only screen and (max-width: 600px){
 	.header-container {
@@ -34,10 +43,37 @@ li {
 		color: blue;
 	}
 }
+#title_email {
+	text-align: center;
+}
+#price_select {
+	background-color: rgb(230, 201, 0);
+	color: rgb(71, 68, 247);
+}
+#price_select:hover {
+	background-color: rgb(220, 163, 0);
+}
+table {
+	width: 50%;
+	height: 300px;
+	margin: 50px 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 1px solid black;
+	padding: 0; 
+ }
+th {
+	background-color: rgb(128, 128, 128);
+	font-weight: bold;
+	height: 30%;
+}
+td {
+	height: 70%;
+}
 	</style>
 </head>
 <body>
-	<h6 id="media-test">blue if width < 600(column), red if width>600(row)</h6>
 	<div id="header" class="header-container">
 		<img src="title_image.PNG" alt="Original Trombones" id="header-img">
 		<nav id="nav-bar">
@@ -48,13 +84,77 @@ li {
 			</ul>	
 		</nav>
 	</div>
-	<div>
+	<div id="title_email">
 		<h2>Handcrafted, home-made masterpieces</h2>
 		<form action="https://www.freecodecamp.com/email-submit" id="form">
 			<label for="email">
 				<input type="email" id="email" name="email" placeholder="Enter yout email address">
-				<input type="submit" value="GET STARTED">
+				<input type="submit" value="GET STARTED" id="start_submit">
 		</form>
+	</div>
+	<div id="features">
+		<div>
+			<h2>Premium Matarials</h2>
+			Our trombones us the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+		</div>
+		<div>
+			<h2>Fast shipping</h2>
+			We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. 
+		</div>
+		<div>
+			<h2>Quality Assurance</h2>
+			For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+		</div>
+	</div>
+	<div id="how_it_works">
+		<iframe src="https://youtu.be/y8Yv4pnO7qc"></iframe>
+	</div>
+	<div id="pricing">
+		<table>
+			<tr>
+				<th>TENOR TROMBONE</th>
+			</tr>
+			<tr>
+				<td>
+					<h3>$600</h3>
+					Lorem ipsum.<br>
+					Lorem ipsum.<br>
+					Lorem ipsum dolor.<br>
+					Lorem ipsum.<br>
+					<input type="submit" value="SELECT" id="price_select">
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>BASS TROMBONE</th>
+			</tr>
+			<tr>
+				<td>
+					<h3>$900</h3>
+					Lorem ipsum.<br>
+					Lorem ipsum.<br>
+					Lorem ipsum dolor.<br>
+					Lorem ipsum.<br>
+					<input type="submit" value="SELECT" id="price_select">
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>VALVE TROMBONE</th>
+			</tr>
+			<tr>
+				<td>
+					<h3>$1200</h3>
+					Plays similar to a Trumpet<br>
+					Great for Jazz Bands<br>
+					Lorem ipsum dolor.<br>
+					Lorem ipsum.<br>
+					<input type="submit" value="SELECT" id="price_select">
+				</td>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>
