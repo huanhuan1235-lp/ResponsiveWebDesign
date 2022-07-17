@@ -16,6 +16,8 @@ body {
 	display: flex;
 	width: 100%;
 	position: fixed;
+	top: 0px;
+	padding-top: 20px;
 	background-color: white;
 }
 #header-img {
@@ -39,6 +41,9 @@ body {
 	color: inherit;
 }
 @media only screen and (min-width: 601px) {
+	body {
+		padding-top: 125px;
+	}
 	.header-container {
 		height: 100px;
 		justify-content: space-between;
@@ -52,9 +57,18 @@ body {
 	.nav-link {
 		margin: 5px 20px 5px 20px;
 	}
+	.anchor {
+		display: block;
+		position: relative;
+		top: -120px;
+		visibility: hidden;
+	}
 }
 /* Changes when the screen size is smaller than 600 px */
 @media only screen and (max-width: 600px){
+	body {
+		padding-top: 225px;
+	}
 	.header-container {
 		height: 200px;
 		flex-direction: column;
@@ -67,8 +81,13 @@ body {
 	.nav-link {
 		margin: 5px;
 	}
+	.anchor {
+		display: block;
+		position: relative;
+		top: -220px;
+		visibility: hidden;
+	}
 }
-
 #start_submit {
 	background-color: rgb(230, 201,0);
 }
@@ -76,11 +95,13 @@ body {
 	background-color: rgb(220, 163, 0);
 }
 #title_email {
-	padding-top: 225px;
 	text-align: center;
 }
 #how_it_works{
 	text-align: center;
+}
+iframe {
+	margin-top: 25px;
 }
 #price_select {
 	background-color: rgb(230, 201, 0);
@@ -128,7 +149,8 @@ td {
 				<input type="submit" value="GET STARTED" id="start_submit">
 		</form>
 	</div>
-	<div id="features">
+	<a class="anchor" id="features"></a>
+	<div>
 		<div>
 			<h2>Premium Matarials</h2>
 			Our trombones us the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
@@ -142,10 +164,12 @@ td {
 			For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
 		</div>
 	</div>
-	<div id="how_it_works">
+	<a class="anchor" id="how_it_works"></a>
+	<div>
 		<iframe width="50%" height="auto"  src="https://www.youtube.com/embed/DxcjLwP9doE"></iframe>
 	</div>
-	<div id="pricing">
+	<a id="pricing" class="anchor"></a>
+	<div>
 		<table>
 			<tr>
 				<th>TENOR TROMBONE</th>
