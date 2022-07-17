@@ -11,46 +11,72 @@ body {
 	margin: auto;
 	font-family: 'Alatsi';
 }
-ul {
-	width: 50%;
-	list-style: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-img {
-	max-width:50%;
-	max-height: 50%;
-}
-li {
-	width: 200px;
-	border: 1px solid black;
-	padding: 10px;
-}
+/* When the screen size is bigger than 600px */
 .header-container {
-	background-color: white;
 	display: flex;
-	position: fixed;
 	width: 100%;
+	position: fixed;
+	background-color: white;
+}
+#header-img {
+	width: 40%;
+	height: 100%
+}
+#nav-bar {
+	width: 40%;
+	height: 100%;
 }
 .nav-container {
 	display: flex;
+	list-style: none;
+	padding: 0px;
 }
+.nav-link {
+	text-align: center;
+}
+.nav-link-a {
+	text-decoration: none;
+	color: inherit;
+}
+@media only screen and (min-width: 601px) {
+	.header-container {
+		height: 100px;
+		justify-content: space-between;
+	}
+	#header-img {
+		position: relative;
+	}
+	#nav-bar {
+		position: relative;
+	}
+	.nav-link {
+		margin: 5px 20px 5px 20px;
+	}
+}
+/* Changes when the screen size is smaller than 600 px */
+@media only screen and (max-width: 600px){
+	.header-container {
+		height: 200px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.nav-container {
+		flex-direction: column;
+	}
+	.nav-link {
+		margin: 5px;
+	}
+}
+
 #start_submit {
 	background-color: rgb(230, 201,0);
 }
 #start_submit:hover {
 	background-color: rgb(220, 163, 0);
 }
-@media only screen and (max-width: 600px){
-	.header-container {
-		flex-direction: column;
-	}
-	.nav-container {
-		flex-direction: column;
-	}
-}
 #title_email {
-	padding-top: 250px;
+	padding-top: 225px;
 	text-align: center;
 }
 #how_it_works{
@@ -88,9 +114,9 @@ td {
 		<img src="title_image.PNG" alt="Original Trombones" id="header-img">
 		<nav id="nav-bar">
 			<ul class="nav-container">
-				<li class="nav-link"><a href="#features">Features</a></li>
-				<li class="nav-link"><a href="#how_it_works">How it Works</a></li>
-				<li class="nav-link"><a href="#pricing">Pricing</a></li>
+				<li class="nav-link"><a class="nav-link-a" href="#features">Features</a></li>
+				<li class="nav-link"><a class="nav-link-a" href="#how_it_works">How it Works</a></li>
+				<li class="nav-link"><a class="nav-link-a" href="#pricing">Pricing</a></li>
 			</ul>	
 		</nav>
 	</div>
