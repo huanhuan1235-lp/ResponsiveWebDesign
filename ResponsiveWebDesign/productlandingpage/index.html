@@ -33,10 +33,10 @@ body {
 	list-style: none;
 	padding: 0px;
 }
-.nav-link {
+.nav-link-a {
 	text-align: center;
 }
-.nav-link-a {
+.nav-link {
 	text-decoration: none;
 	color: inherit;
 }
@@ -78,7 +78,7 @@ body {
 	.nav-container {
 		flex-direction: column;
 	}
-	.nav-link {
+	.nav-link-a {
 		margin: 5px;
 	}
 	.anchor {
@@ -88,10 +88,10 @@ body {
 		visibility: hidden;
 	}
 }
-#start_submit {
+#submit {
 	background-color: rgb(230, 201,0);
 }
-#start_submit:hover {
+#submit:hover {
 	background-color: rgb(220, 163, 0);
 }
 #title_email {
@@ -131,22 +131,22 @@ td {
 	</style>
 </head>
 <body>
-	<div id="header" class="header-container">
+	<header id="header" class="header-container">
 		<img src="title_image.PNG" alt="Original Trombones" id="header-img">
 		<nav id="nav-bar">
 			<ul class="nav-container">
-				<li class="nav-link"><a class="nav-link-a" href="#features">Features</a></li>
-				<li class="nav-link"><a class="nav-link-a" href="#how_it_works">How it Works</a></li>
-				<li class="nav-link"><a class="nav-link-a" href="#pricing">Pricing</a></li>
+				<li class="nav-link-a"><a class="nav-link" href="#features">Features</a></li>
+				<li class="nav-link-a"><a class="nav-link" href="#how_it_works">How it Works</a></li>
+				<li class="nav-link-a"><a class="nav-link" href="#pricing">Pricing</a></li>
 			</ul>	
 		</nav>
-	</div>
+	</header>
 	<div id="title_email">
 		<h2>Handcrafted, home-made masterpieces</h2>
 		<form action="https://www.freecodecamp.com/email-submit" id="form">
 			<label for="email">
 				<input type="email" id="email" name="email" placeholder="Enter yout email address">
-				<input type="submit" value="GET STARTED" id="start_submit">
+				<input type="submit" value="GET STARTED" id="submit">
 		</form>
 	</div>
 	<a class="anchor" id="features"></a>
@@ -166,7 +166,7 @@ td {
 	</div>
 	<a class="anchor" id="how_it_works"></a>
 	<div>
-		<iframe width="50%" height="auto"  src="https://www.youtube.com/embed/DxcjLwP9doE"></iframe>
+		<iframe id="video" width="50%" height="auto"  src="https://www.youtube.com/embed/DxcjLwP9doE"></iframe>
 	</div>
 	<a id="pricing" class="anchor"></a>
 	<div>
