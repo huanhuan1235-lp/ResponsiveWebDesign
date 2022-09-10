@@ -38,13 +38,15 @@ li {
 	font-weight: lighter;
 	font-family: Trebuchet MS;
 }
-#welcome-section {
+.page {
 	display: block;
 	height: 100vh;
 	width: 100vw;
 	margin: 0px;
-	background-color: #232326;
 	text-align: center;
+}
+#welcome-section {
+	background-color: #232326;
 }
 #welcome-section #intro1 {
 	color: white;
@@ -59,6 +61,34 @@ li {
 	font-size: 2em;
 	font-family: Times New Roman;
 }
+#projects {
+	background-color: #48557a
+}
+header#page2 {
+	color: white;
+	font-weight: 800;
+	font-size: 4em;
+	text-decoration: underline;
+	text-underline-position: under;
+	padding-top: 10%;
+	margin-bottom: 5%;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.project-tile {
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
+	height: 35vw;
+	margin: 1%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
 </style>
 </head>
 <body>
@@ -69,30 +99,32 @@ li {
 			<li><a class="nav-link" href="#contacts">Contact</a></li>
 		</ul>
 	</nav>
-	<div id="welcome-section">
+	<div class="page" id="welcome-section">
 		<h1 id="intro1">Hey I am 1235</h1>
 		<h3 id="intro2">a web developer</h3>
 	</div>
-	<div id="projects">
+	<div class="page" id="projects">
 		<header id="page2">These are some of my projects</header>
-		<div class="project-tile">
-			<img src="./tributepage.jpeg" alt="Tribute Page Image">
-			Tribute Page
-		</div>
-		<div class="project-tile">
-			<img src="./surveyform.jpeg" alt="Survey Form Image">
-			Survey Form
-		</div>
-		<div class="project-tile">
-			<img src="./productlandingpage.jpeg" alt="Product Landing Page Image">
-			Product Landing Page
-		</div>
-		<div class="project-tile">
-			<img src="./techdocpage.jpeg" alt="Technical Documentation Page Image">
-			Technical Documentation Page
+		<div class="flex-container">
+			<div class="project-tile">
+				<img src="./tributepage.jpeg" alt="Tribute Page Image">
+				Tribute Page
+			</div>
+			<div class="project-tile">
+				<img src="./surveyform.jpeg" alt="Survey Form Image">
+				Survey Form
+			</div>
+			<div class="project-tile">
+				<img src="./productlandingpage.jpeg" alt="Product Landing Page Image">
+				Product Landing Page
+			</div>
+			<div class="project-tile">
+				<img src="./techdocpage.jpeg" alt="Technical Documentation Page Image">
+				Technical Documentation Page
+			</div>
 		</div>
 	</div>
-	<div id="contacts">
+	<div class="page" id="contacts">
 		<h1>Let's work together</h1>
 		<h6>How do you take your coffee?</h6>
 		<a href="https://github.com/huanhuan1235-lp">My GitHub Link</a>
