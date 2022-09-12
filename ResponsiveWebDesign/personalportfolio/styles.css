@@ -1,0 +1,123 @@
+body {
+	max-width: max-content;
+	max-height: max-content;
+	font-family: Arial;
+	margin: 0;
+}
+nav#navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 10%;
+	width: 100%;
+	background-color: #af3d47;
+	z-index: 999;
+}
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	height: 100%;
+	margin: 0px;
+}
+li {
+	list-style: none;
+	margin: 1.5em;
+}
+.nav-link {
+	text-decoration: none;
+	color: white;
+	font: 24px normal;
+	font-weight: lighter;
+	font-family: Trebuchet MS;
+}
+.page {
+	display: block;
+	height: 100vh;
+	width: 100vw;
+	margin: 0px;
+	text-align: center;
+	color: white;
+}
+#welcome-section {
+	background-color: #232326;
+}
+#welcome-section #intro1 {
+	font-weight: 800;
+	font-size: 4.5em;
+	padding-top: 40vh;
+}
+#welcome-section #intro2 {
+	color: #af3d47;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 2em;
+	font-family: Times New Roman;
+}
+#projects {
+	background-color: #48557a;
+	height: auto;
+}
+header#page2 {
+	color: white;
+	font-weight: 800;
+	font-size: 3.5em;
+	text-decoration: underline;
+	text-underline-position: under;
+	padding-top: 10%;
+	margin-bottom: 5%;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.project-tile {
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
+	height: auto;
+	margin: 1%;
+	background-color: #313840;
+	text-align: center;
+	color: white;
+	font-size: 1em;
+	font-weight: 200;
+}
+@media only screen and (max-width: 301px){
+	.project-tile {
+		width: 50vw;
+	}
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.project-tile > a {
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+	font-weight: 200;
+}
+#contacts {
+	background-color: #313840;
+}
+#contacts > h1 {
+	font-size: 4em;
+	font-weight: 700;
+	padding-top: 25%;
+	margin-bottom: 1%;
+}
+#contacts > h6 {
+	font-size: 1.5em;
+	font-weight: 200;
+	font-style: italic;
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+#contacts > a {
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	font-weight: 300;
+}
